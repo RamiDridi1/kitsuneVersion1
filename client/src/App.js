@@ -6,6 +6,12 @@ import Dashboard from './components/pages/Dashboard';
 import Home from './components/pages/Home';
 import { useDispatch,useSelector } from 'react-redux';
 import { getAuthUser } from './redux/actions';
+import News from './components/pages/news';
+import PreviousEvents from './components/pages/previousEvents';
+import CosplayCompetitionRules from './components/pages/cosplayCompetitionRules';
+import Articles from './components/pages/articles';
+import Navbar2 from './components/pages/Navbar2';
+
 function App() {
   const dispatch=useDispatch()
   const getAuth=()=>{
@@ -15,7 +21,11 @@ function App() {
   const isAuth=useSelector((state)=>state.isAuth)
   return (
     <div className="App">
-    <AppNavBar />
+      <header>
+      <AppNavBar />
+      <Navbar2 />
+      </header>
+    
     {isAuth &&
     <Routes>
       <Route path="/Dashboard" element={<Dashboard/>} />
@@ -23,7 +33,10 @@ function App() {
         }
       <Routes>
   <Route path="/" element={<Home/>} />
-  
+  <Route path="/news" element={<News />} />
+  <Route path="/previousEvents" element={<PreviousEvents />} />
+  <Route path="/cosplayCompetitionRules" element={<CosplayCompetitionRules />} />
+  <Route path="/articles" element={<Articles />} />
 </Routes>
   
 

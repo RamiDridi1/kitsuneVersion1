@@ -19,17 +19,14 @@ const isAuth=useSelector((state)=>state.isAuth)
   const errors=useSelector((state)=>state.err)
 console.log(errors,"hellllo")
 console.log(isAuth,"kkkkkkkkk")
-  const handleRegister=()=>{
-     
-    const formdata={name,email,password,lastName}
-    dispatch(registeUser(formdata,navigate))
-
- if (isAuth ===true){
-toggle()
- }
-
-  }
-
+const handleRegister = () => {
+  const formdata = { name, email, password, lastName };
+  dispatch(registeUser(formdata, () => {
+    if (isAuth) {
+      toggle(); 
+    }
+  }));
+};
   
 
   return (
