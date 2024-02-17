@@ -21,7 +21,7 @@ function LoginModal() {
   }
   return (
     <div>
-         <Button color="danger" onClick={toggle}>
+         <Button  onClick={toggle}>
 Login      </Button>
       <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>Login</ModalHeader>
@@ -48,9 +48,9 @@ Login      </Button>
 </InputGroup> 
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={handleLogin}>
+          <Button  onClick={handleLogin}>
 Login          </Button>{' '}
-          <Button color="secondary" onClick={toggle}>
+          <Button  onClick={toggle}>
             Cancel
           </Button>
         </ModalFooter>

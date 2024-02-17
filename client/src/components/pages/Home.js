@@ -3,6 +3,14 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar2 from './Navbar2';
 import * as Yup from 'yup';
+import './Home.css'; 
+import family from './family.jpg';
+import AAB from './AAB.jpg';
+import af from './af.png';
+import medina from './medina.jpg';
+import orange from './orange.webp';
+import pathé from './pathé.jpg';
+import selecta from './selecta.jpg';
 
 const ContactUsSchema = Yup.object().shape({
   name: Yup.string().required('Required'),
@@ -61,7 +69,7 @@ function Home() {
           Kitsune Cosplay Club is a recently launched affiliation of AAB. It brings together cosplayers from all over Tunisia.
           Our goal is to enhance the conditions within our community through events showcasing cosplayers, as well as workshops and tutorials to introduce or refine their skills.
         </p>
-        <img src='imgs/family.jpg' alt='kitsune members' />
+        <img src={family} alt='kitsune members' className='back'/>
         
       </section>
 
@@ -89,32 +97,32 @@ function Home() {
         <div className='scrolling-section'>
       
           <div className='profile'>
-            <img src='AAB.jpg' alt='Company1' />
+            <img src={AAB} alt='Company1' className='comp'/>
             <p>AAB</p>
           </div>
 
           <div className='profile'>
-            <img src='medina.jpg' alt='Company2' />
+            <img src={medina} alt='Company2' className='comp' />
             <p>medina</p>
           </div>
 
           <div className='profile'>
-            <img src='af.png' alt='Company3' />
+            <img src={af} alt='Company3'className='comp' />
             <p>Alliance Francaise</p>
           </div>
 
           <div className='profile'>
-            <img src='orange.webp' alt='Company4' />
+            <img src={orange} alt='Company4' className='comp' />
             <p>Orange</p>
           </div>
 
           <div className='profile'>
-            <img src='pathé.jpg' alt='Company5' />
+            <img src={pathé} alt='Company5' className='comp' />
             <p>Pathé</p>
           </div>
 
           <div className='profile'>
-            <img src='selecta.jpg' alt='Company6' />
+            <img src={selecta} alt='Company6' className='comp' />
             <p>Selecta</p>
           </div>
        

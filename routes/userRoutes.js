@@ -1,11 +1,35 @@
-const express=require("express")
-const router=express.Router()
-const User=require("../models/user")
-const bcrypt=require("bcrypt")
-const jwt=require("jsonwebtoken")
-const isAuth=require("../middleweares/isAuth")
-const {loginRules,registerRules,validator} =require("../middleweares/validator")
-//register User
+// routes/userRoutes.js
+
+const express = require("express");
+const router = express.Router();
+const User = require("../models/user");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const isAuth = require("../middlewares/isAuth");
+const isAdmin = require("../middlewares/isAdmin"); 
+const { loginRules, registerRules, validator } = require("../middlewares/validator");
+
+// ... (your existing code)
+
+// Set admin role for a user
+router.put("/set-admin/:userId", isAuth, isAdmin, async (req, res) => {
+    try {
+        const { userId } = req.params;
+
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.status(404).send({ msg: "User not found" });
+        }
+
+        user.role = "admin";
+        await user.save();
+
+        res.send({ msg: "User role updated to admin" });
+    } catch (error) {
+        console.error("Error setting admin role:", error);
+        res.status(500).send({ msg: "Internal Server Error" });
+    }
+});
 router.post("/register",registerRules(),validator,async(req,res)=>{
     const{name,email,lastName,password}=req.body
 
@@ -30,7 +54,6 @@ const token=jwt.sign(payload,"fghgdf",{expiresIn:"7 days"})
 res.send({msg:"user created successfuly !! ",user,token})
 
 })
-
 //login user
 router.post("/login",loginRules(),validator,async(req,res)=>{
     const{email,password}=req.body
@@ -63,4 +86,6 @@ res.send({user:req.user})
 })
 
 
-module.exports=router
+module.exports = router;
+
+

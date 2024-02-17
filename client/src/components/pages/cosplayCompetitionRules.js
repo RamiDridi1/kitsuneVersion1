@@ -1,19 +1,23 @@
+import React from 'react';
+import './CosplayCompetitionRules.css'; 
+
 function CosplayCompetitionRules() {
     return(
     <>
     <h1>Cosplay Competition Rules</h1>
-   <h2> ①Each country or region may have one pair of representatives</h2>
+    <div className='general'>
+   <h3> ①Each country or region may have one pair of representatives</h3>
  
-   <h2> ②Participants must live in the country or region they qualify in</h2>
+   <h3> ②Participants must live in the country or region they qualify in</h3>
  
-   <h2> ③Participants must be 18 or over </h2>
+   <h3> ③Participants must be 18 or over </h3>
  
-   <h2> ④Participants must be able to stay in Nagoya City (general area), Aichi Prefecture during the WCS events.</h2>
+   <h3> ④Participants must be able to stay in Nagoya City (general area), Aichi Prefecture during the WCS events.</h3>
  
-   <h2> ⑤The two team members must participate as characters from the same Japanese manga, anime, game, or live-action series for their Championship Costumes. </h2>
+   <h3> ⑤The two team members must participate as characters from the same Japanese manga, anime, game, or live-action series for their Championship Costumes. </h3>
  
-<h2> ⑥As a general rule, the costumes for the Championship competition must be handmade by the constants themselves </h2>
-
+<h3> ⑥As a general rule, the costumes for the Championship competition must be handmade by the constants themselves </h3>
+</div>
     <p>
     1. Costume Judging (100 points)
 

@@ -1,0 +1,155 @@
+/* Home.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Styles */
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Section 1 Styles */
+  #1 {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Section 2 Styles */
+  #2 {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+  }
+  
+  .valeurs {
+    color: #333;
+  }
+  
+  .exc,
+  .ful,
+  .rec {
+    margin-bottom: 20px;
+  }
+  
+  /* Section 3 Styles */
+  #3 {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+  }
+  
+  .scrolling-section {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .profile {
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  /* Section 4 Styles */
+  #4 {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .comp {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  /* Scroll Effect Styles (adjust as needed) */
+  /* Add your scrollEffect.js styles here */
+  
+  /* Add any additional styles as needed */
+
+
+
+  /* Add this to your existing CSS file or create a new one */
+
+/* Style for the Event container */
+.Event {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Style for the Event title */
+.Event h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the Event image */
+.Event img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Style for the Event description */
+.Event p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Style for spacing between events */
+.Event + .Event {
+  margin-top: 40px;
+}
+
+  

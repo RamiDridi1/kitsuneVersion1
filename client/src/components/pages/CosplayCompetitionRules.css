@@ -1,0 +1,76 @@
+/* CosplayCompetitionRules.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .general {
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  h3 {
+    color: #2196f3; /* Change the color as needed */
+    margin-top: 15px;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  /* Style the numbered list */
+  ol {
+    list-style-type: none;
+    counter-reset: custom-counter;
+  }
+  
+  ol li {
+    counter-increment: custom-counter;
+    margin-bottom: 10px;
+  }
+  
+  ol li::before {
+    content: counter(custom-counter);
+    color: #f06292; /* Change the color as needed */
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Style the judging points */
+  .judging {
+    margin-top: 20px;
+  }
+  
+  .judging h2 {
+    color: #2196f3; /* Change the color as needed */
+    margin-top: 30px;
+  }
+  
+  .judging p {
+    margin-bottom: 10px;
+  }
+  
+  /* Add any additional styles as needed */
+  
+  
+  

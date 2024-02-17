@@ -1,1 +1,228 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  max-height: 50px;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffc107;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #343a40;
+  color: #fff;
+ 
+  bottom: 0;
+  width: 100%;
+}
+
+/* Event styles */
+.Event {
+  margin-bottom: 40px;
+}
+
+.Event img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* General section styles */
+section {
+  margin: 40px 0;
+}
+
+section h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Values section styles */
+.valeurs {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.exc,
+.ful,
+.rec {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Scrolling section styles */
+.scrolling-section {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.profile {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.profile img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.profile p {
+  margin-top: 10px;
+}
+
+/* Contact Us section styles */
+#4 {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+#4 h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#4 form {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* News and Dashboard section styles */
+#5,
+#6 {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+#5 h1,
+#6 h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .scrolling-section {
+    flex-wrap: nowrap;
+  }
+
+  .profile {
+    margin-right: 10px;
+  }
+}
 

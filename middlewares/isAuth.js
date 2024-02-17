@@ -26,3 +26,4 @@ next()
 }
 
 module.exports=isAuth
+
